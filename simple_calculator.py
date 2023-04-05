@@ -35,21 +35,21 @@ while True:
     if op == "end":
         break   # "반복을 종료"
     elif op == "+":
-        ret = arithmetic_ops(add) # 정의된 함수 사용
+        num1,num2,ret = arithmetic_ops(add) # 정의된 함수 사용
     elif op == "*":
-        ret = arithmetic_ops(lambda x,y:x*y) # 익명함수(lambda) 사용
+        num1,num2,ret = arithmetic_ops(lambda x,y:x*y) # 익명함수(lambda) 사용
     elif op == "-":
-        ret = arithmetic_ops(sub) # 정의된 함수 사용
+        num1,num2,ret = arithmetic_ops(sub) # 정의된 함수 사용
     elif op == "/":
-        ret = arithmetic_ops(lambda x,y:x/y) # 익명함수(lambda) 사용
+        num1,num2,ret = arithmetic_ops(lambda x,y:x/y) # 익명함수(lambda) 사용
     elif op == "%":
-        ret = arithmetic_ops(lambda x,y:x%y) # 익명함수(lambda) 사용
+        num1,num2,ret = arithmetic_ops(lambda x,y:x%y) # 익명함수(lambda) 사용
     #
     # [fill this area] 위의 코드를 참고하여 -, /, %에 대한 내용 구현
     #
     else:
         print("Invalid operation")
         continue # Invalid operation이므로 연산결과를 출력하지 않고 "넘어간다".
-    print(f"{ret[0]} {op} {ret[1]} = {ret[2]}")  # 연산 결과를 출력
+    print(f"{num1}{op}{num2}={ret}")  # 연산 결과를 출력
 
 print("Exit program")
