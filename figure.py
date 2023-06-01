@@ -7,7 +7,7 @@ class line:
         self.__width  = width
         self.__height = height
 
-    def __set_length(self, width, height):
+    def set_length(self, width, height):
         self.__width  = width
         self.__height = height
 
