@@ -29,7 +29,7 @@ except ValueError:
 triangle = figure.area_right_triangle(width, height)
 print(triangle)
 
-myline.set_length(30, 40)
+myline.__set_length(30, 40)
 width, height = myline.get_length()
 # implement exception handler
 try:
